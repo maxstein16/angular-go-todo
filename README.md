@@ -9,7 +9,7 @@ This guide provides step-by-step instructions for setting up and running the pro
 Before starting, ensure the following tools are installed on your system:
 
 - **Node.js**: [Download Node.js](https://nodejs.org/)
-- **Angular CLI**:
+- **Angular CLI**
 - **Go (Golang)**: [Download Go](https://go.dev/dl/)
 
 Install globally by running:
