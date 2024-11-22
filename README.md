@@ -38,18 +38,18 @@ cd backend
 go mod init backend
 ```
 
-### Start the Development Server
-
-```bash
-go run main.go
-```
-
 ### Install Dependencies
 
 ```bash
 go get -u github.com/gin-contrib/cors
 go get -u github.com/gin-gonic/gin
 go get -u github.com/joho/godotenv
+```
+
+### Start the Development Server
+
+```bash
+go run main.go
 ```
 
 ## Angular Setup
