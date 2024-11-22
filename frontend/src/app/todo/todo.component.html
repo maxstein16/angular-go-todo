@@ -1,0 +1,42 @@
+<div class="background-wrapper">
+  <div class="todo">
+    <mat-card class="todo-card">
+      <mat-card-header>
+        <mat-card-title>Todo List App</mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <form class="add-todo-form">
+          <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput [(ngModel)]="newTodo.name" name="name" placeholder="Add new todo" />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Class</mat-label>
+            <input matInput [(ngModel)]="newTodo.class" name="class" placeholder="Enter class" />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Due Date</mat-label>
+            <input
+              matInput
+              [matDatepicker]="picker"
+              [(ngModel)]="newTodo.due_date"
+              name="due_date"
+            />
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+
+          <button mat-raised-button color="primary" (click)="addTodo()">Add Todo</button>
+        </form>
+
+        <!-- Grouped Todo List -->
+
+        <!-- Todo Stats -->
+
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
