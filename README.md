@@ -32,12 +32,6 @@ git clone https://github.com/maxstein16/angular-go-todo.git
 cd backend
 ```
 
-### Initialize the Go module
-
-```bash
-go mod init backend
-```
-
 ### Install Dependencies
 
 ```bash
