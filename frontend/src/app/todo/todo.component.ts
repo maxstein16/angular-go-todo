@@ -66,14 +66,6 @@ export class TodoComponent implements OnInit {
   }
 
   //toggleComplete
-  async toggleComplete(todo: Todo) {
-    try {
-      const updatedTodo = await this.todoService.updateTodo(todo.id, !todo.completed);
-      todo.completed = updatedTodo.completed;
-    } catch (error) {
-      console.error('Error updating todo:', error);
-    }
-  }
 
   //deleteTodo
 
